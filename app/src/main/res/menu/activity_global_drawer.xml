@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:checked="true"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Підбір фільму" />
+        <item
+            android:id="@+id/nav_catalog"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Пошук" />
+
+    </group>
+
+    <item android:title="Кабінет">
+        <menu>
+            <item
+                android:id="@+id/nav_saved"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Збережені" />
+            <item
+                android:id="@+id/nav_looked"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Переглянуті" />
+            <item
+                android:id="@+id/nav_lists"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Мої списки" />
+            <item
+                android:id="@+id/nav_statistic"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Статистика" />
+        </menu>
+    </item>
+    <item android:title="Додатково">
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Налаштування" />
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Довідка" />
+        </menu>
+    </item>
+</menu>

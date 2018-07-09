@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TVAssistant</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="restore_password">Restore password</string>
+    <string name="repeat_passowrd">Repeat password</string>
+    <string name="create">Create</string>
+    <string name="title_activity_global">Підбір фільму</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_video">VideoActivity</string>
+
+    <string-array name="Types">
+        <item>Любий</item>
+        <item>Фільм</item>
+        <item>Серіал</item>
+        <item>Мультфільм</item>
+        <item>Аніме</item>
+    </string-array>
+
+    <string-array name="TypesSearch">
+        <item>Назва</item>
+        <item>Актор</item>
+        <item>Режисер</item>
+        <item>Тег</item>
+        <item>Опис</item>
+    </string-array>
+</resources>

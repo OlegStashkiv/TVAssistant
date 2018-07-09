@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+
+              tools:context="team.cont.tvassistant.SearchActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="Задайте критерій пошуку" />
+
+                <Spinner
+                    android:id="@+id/spinner20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="0.15"
+                    android:entries="@array/TypesSearch"
+                    android:spinnerMode="dialog"/>
+
+                <EditText
+                    android:id="@+id/searchLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="0.15"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:hint="Введіть текст"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.15"
+                    android:background="@android:color/darker_gray"
+                    android:text="Пошук"
+                    android:textAllCaps="false" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.15"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/linear40"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/button"
+                    android:layout_alignRight="@+id/button"
+                    android:layout_below="@+id/button"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:text="Нічого не знайдено"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
